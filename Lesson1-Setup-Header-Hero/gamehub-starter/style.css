@@ -1,0 +1,108 @@
+/* GameHub · Day 1: setup, header and hero
+   Part A is given: read it, do not change it.
+   Part B is yours: write each step under its comment.
+   The panel at the bottom right checks your page; targets.html shows the goal. */
+
+/* ===== Part A: given ===== */
+* { box-sizing: border-box; }          /* width includes padding and border */
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+}
+img { max-width: 100%; display: block; } /* pictures never overflow their box */
+
+/* ===== Part B: yours ===== */
+
+/* STEP 1 · .container
+   At most 1100px wide, centered on the page, 24px padding left and right.
+   Every section uses it, so this one rule lines the whole page up. */
+
+   .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+   }
+
+/* STEP 2 · .site-header and .nav
+   .site-header: a dark background colour.
+   .nav: logo on the left, links on the right, centered up and down,
+   16px padding top and bottom. */
+
+   .site-header {
+      background-color: #1f2933; /* dark background */
+   }
+   .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+   }
+
+/* STEP 3 · .nav-links
+   The links in a row, 24px apart. No bullets, no margin, no padding.
+   The links inside (.nav-links a): white, no underline. */
+
+   .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+
+/* STEP 4 · .logo
+   Bigger than the links (1.6rem), bold, white, no underline. */
+   .nav-links a {
+      color: white;
+      text-decoration: none;
+   }
+   .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+   }
+/* STEP 5 · .hero
+   At least 70vh tall, a background colour, white text.
+   Text centered, and the content centered up and down. */
+
+   .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      background-color: #1e3a8a;
+      text-align: center;
+      color: white;
+   }
+
+/* STEP 6 · .btn and .hero-buttons
+   .btn: inline-block, padding 12px 28px, rounded corners, no underline, bold.
+   Give .btn-primary and .btn-secondary different looks.
+   .hero-buttons: the two buttons side by side, centered, 16px apart. */
+.btn{
+   display: inline-block;
+   padding: 12px 28px;
+   border-radius: 8px;
+   border: 2px solid transparent;
+   text-decoration: none;
+   font-weight: 700;
+}
+.btn-primary {
+   color: black;
+   background-color: orange;
+}
+.btn-secondary {
+   color: white;
+   border: white 2px solid;
+   background-color: transparent;
+}
+.hero-buttons {
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+}
+/* Done early? Try other colours from the reference sheet (Colors tab).
+   On day 2 we turn your colours into variables. */
