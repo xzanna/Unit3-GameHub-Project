@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* GameHub Day 3 starter = Day 2 solution */
+:root {
+  --bg: #f5f7fa;
+  --ink: #1f2933;
+  --primary: #1e3a8a;
+  --accent: #f59e0b;
+  --dark: #111827;
+  --font: "Poppins", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; color: var(--ink); background: var(--bg); font-family: var(--font); }
+img { max-width: 100%; display: block; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.site-header { background-color: var(--dark); }
+.nav { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; padding-bottom: 16px; }
+.nav-links { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.nav-links a { color: #ffffff; text-decoration: none; }
+.logo { color: #ffffff; font-size: 1.6rem; font-weight: 700; text-decoration: none; }
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.4rem; }
+.hero { min-height: 70vh; display: flex; align-items: center; text-align: center; background: linear-gradient(135deg, var(--primary), var(--dark)); color: #ffffff; }
+.tagline { color: #e5e7eb; }
+.btn { display: inline-block; padding: 12px 28px; border: 2px solid transparent; border-radius: 8px; text-decoration: none; font-weight: 700; }
+.btn-primary { background-color: var(--accent); color: var(--dark); }
+.btn-secondary { border-color: #ffffff; color: #ffffff; }
+.hero-buttons { display: flex; justify-content: center; gap: 16px; }
+
+/* PART B: write your code below this line. Each step has one job.
+   The page now has a Features section: six .card boxes inside one .cards box. */
+
+/* STEP 1 ▸ Add a .cards rule with display: flex; and gap: 24px;
+   The six cards sit side by side in one row, with a space between each. */
+
+.cards {
+    display: flex;
+    gap: 24px;
+}
+
+/* STEP 2 ▸ Add a .card rule. Give it a background-color that stands out from your page
+   (#ffffff works on a light page) and padding: 24px; so the words do not touch the edge. */
+
+.card {
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+/* STEP 3 ▸ In the .card rule, add border-radius: 12px; for round corners
+   and box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); so the card lifts off the page. */
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* STEP 4 ▸ Six cards are squashed into one row. In the .cards rule add flex-wrap: wrap;
+   Now cards that do not fit move down to a new row. */
+
+.cards {
+    flex-wrap: wrap;
+}
+
+/* STEP 5 ▸ The rows are ragged: each card is as wide as its text. In the .card rule add
+   flex: 1 1 300px;   (grow 1, shrink 1, start at 300px)
+   Cards in a row now share it equally. The panel needs every card 250px or wider. */
+
+.card {
+    flex: 1 1 300px;
+}
+
+/* STEP 6 ▸ Use your palette on the cards. In the .card rule add
+   border-top: 4px solid var(--accent);  then add a .card h3 rule with
+   color: var(--primary); and margin-top: 0;  Any of your own variables work. */
+
+.card {
+    border-top: 4px solid var(--accent);
+}
+.card h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
