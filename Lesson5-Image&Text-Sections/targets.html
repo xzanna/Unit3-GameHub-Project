@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="csrf-token" content="_wZfwYbNYM0mgC5qO26IDlozFfg7qHNHmYx-i7PJU5o"><script src="/_app/csrf.js?v=7460ac71cc"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameHub Day 5 targets</title>
+<style>
+  body { margin: 0; padding: 24px 16px; font: 16px/1.5 system-ui, "Segoe UI", Arial, sans-serif; color: #1f2933; }
+  main { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .lead, .t p { margin: 0 0 12px; color: #4a5565; }
+  .t { margin: 0 0 24px; }
+  .t h2 { font-size: 1.15rem; margin: 0; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .pair { grid-template-columns: 1fr; } }
+  figure { margin: 0; border: 1px solid #d5dbe3; border-radius: 6px; overflow: hidden; }
+  figcaption { font-size: .85rem; font-weight: 600; padding: 4px 10px; background: #eef2f7; }
+  .pic { background: #f5f7fa; padding: 14px; }
+  .split { display: flex; align-items: center; gap: 16px; }
+  .stack { display: block; }
+  .half { flex: 1; }
+  .wide { flex: 2; }
+  .rev { flex-direction: row-reverse; }
+  .media { border-radius: 10px; overflow: hidden; }
+  .shot { display: block; width: 100%; height: 110px; }
+  .txt h3 { margin: 0 0 4px; color: #1e3a8a; font-size: 1rem; }
+  .txt p { margin: 0; font-size: .85rem; }
+  .btn { display: inline-block; margin-top: 8px; padding: 6px 14px; border: 2px solid #fff; border-radius: 8px; color: #fff; font-weight: 700; font-size: .8rem; }
+  .btn-dark { border-color: #1e3a8a; color: #1e3a8a; }
+</style>
+</head>
+<body>
+<main>
+<h1>GameHub Day 5 targets: an image beside its text</h1>
+<p class="lead">Each step before and after. Your pictures and colours can differ; the panel turns a row green when the rule is right.</p>
+
+<section class="t"><h2>Step 1: Make it a row</h2><p>display: flex and a gap on .split. Panel row 1.</p>
+<div class="pair">
+<figure><figcaption>Before</figcaption><div class="pic"><div class="split stack"><div class="media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><circle cx="530" cy="320" r="90" fill="#f59e0b"/><circle cx="730" cy="320" r="90" fill="#f59e0b"/><rect y="520" width="1200" height="280" fill="#172f6e"/></svg></div><div class="txt"><h3>About</h3><p>Stacked: picture, then words.</p></div></div></div></figure>
+<figure><figcaption>After</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><circle cx="530" cy="320" r="90" fill="#f59e0b"/><circle cx="730" cy="320" r="90" fill="#f59e0b"/><rect y="520" width="1200" height="280" fill="#172f6e"/></svg></div><div class="half txt"><h3>About</h3><p>Picture left, words right.</p></div></div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 2: Equal halves</h2><p>flex: 1 on .split-media and .split-text. Panel row 2.</p>
+<div class="pair">
+<figure><figcaption>Before</figcaption><div class="pic"><div class="split"><div class="wide media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><circle cx="530" cy="320" r="90" fill="#f59e0b"/><circle cx="730" cy="320" r="90" fill="#f59e0b"/><rect y="520" width="1200" height="280" fill="#172f6e"/></svg></div><div class="txt"><h3>About</h3><p>A strip.</p></div></div></div></figure>
+<figure><figcaption>After</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><circle cx="530" cy="320" r="90" fill="#f59e0b"/><circle cx="730" cy="320" r="90" fill="#f59e0b"/><rect y="520" width="1200" height="280" fill="#172f6e"/></svg></div><div class="half txt"><h3>About</h3><p>Half and half.</p></div></div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 3: The other way round</h2><p>row-reverse on .split-reverse, the Community section only. Panel row 3.</p>
+<div class="pair">
+<figure><figcaption>Before</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#111827"/><rect x="150" y="90" width="900" height="360" rx="16" fill="#2a4fa8"/><rect x="100" y="500" width="1000" height="40" rx="12" fill="#f59e0b"/></svg></div><div class="half txt"><h3>Community</h3><p>Picture left, like About.</p></div></div></div></figure>
+<figure><figcaption>After</figcaption><div class="pic"><div class="split rev"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#111827"/><rect x="150" y="90" width="900" height="360" rx="16" fill="#2a4fa8"/><rect x="100" y="500" width="1000" height="40" rx="12" fill="#f59e0b"/></svg></div><div class="half txt"><h3>Community</h3><p>Words left, picture right.</p></div></div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 4: Fill, do not squash</h2><p>width 100%, a height, object-fit: cover. Panel row 4.</p>
+<div class="pair">
+<figure><figcaption>Before: stretched</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="none"><rect width="1200" height="800" fill="#1e3a8a"/><rect y="520" width="1200" height="280" fill="#172f6e"/><circle cx="330" cy="330" r="70" fill="#f59e0b"/><circle cx="530" cy="300" r="70" fill="#f59e0b"/><circle cx="730" cy="300" r="70" fill="#f59e0b"/><circle cx="930" cy="330" r="70" fill="#f59e0b"/></svg></div><div class="half txt"><h3>About</h3><p>Round heads became eggs.</p></div></div></div></figure>
+<figure><figcaption>After: cover</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><rect y="520" width="1200" height="280" fill="#172f6e"/><circle cx="330" cy="330" r="70" fill="#f59e0b"/><circle cx="530" cy="300" r="70" fill="#f59e0b"/><circle cx="730" cy="300" r="70" fill="#f59e0b"/><circle cx="930" cy="330" r="70" fill="#f59e0b"/></svg></div><div class="half txt"><h3>About</h3><p>Shape kept, edges cropped.</p></div></div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 5: Zoom on hover</h2><p>overflow: hidden, a transition, scale(1.06) on hover. Panel row 5 after you hover a picture.</p>
+<div class="pair">
+<figure><figcaption>At rest</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><rect y="520" width="1200" height="280" fill="#172f6e"/><circle cx="530" cy="320" r="80" fill="#f59e0b"/><circle cx="730" cy="320" r="80" fill="#f59e0b"/></svg></div><div class="half txt"><h3>About</h3><p>Resting.</p></div></div></div></figure>
+<figure><figcaption>Hover</figcaption><div class="pic"><div class="split"><div class="half media"><svg class="shot" viewBox="40 30 1120 740" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1e3a8a"/><rect y="520" width="1200" height="280" fill="#172f6e"/><circle cx="530" cy="320" r="80" fill="#f59e0b"/><circle cx="730" cy="320" r="80" fill="#f59e0b"/></svg></div><div class="half txt"><h3>About</h3><p>A little larger, inside its window.</p></div></div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 6: Rescue the button</h2><p>A dark border and dark text for Join us. Panel row 6.</p>
+<div class="pair">
+<figure><figcaption>Before: invisible</figcaption><div class="pic"><div class="txt"><h3>Community</h3><p>Bring a friend; bring a team.</p><span class="btn">Join us</span></div></div></figure>
+<figure><figcaption>After: readable</figcaption><div class="pic"><div class="txt"><h3>Community</h3><p>Bring a friend; bring a team.</p><span class="btn btn-dark">Join us</span></div></div></figure>
+</div></section>
+</main>
+</body>
+</html>

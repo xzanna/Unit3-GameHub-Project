@@ -1,0 +1,11 @@
+/* Day 3: feature cards */
+.cards { display: flex; gap: 24px; flex-wrap: wrap; } /* STEP 1, STEP 4 */
+.card {
+  background-color: #ffffff; /* STEP 2 */
+  padding: 24px;
+  border-radius: 12px; /* STEP 3 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  flex: 1 1 300px; /* STEP 5 */
+  border-top: 4px solid var(--accent); /* STEP 6 */
+}
+.card h3 { color: var(--primary); margin-top: 0; } /* STEP 6 */

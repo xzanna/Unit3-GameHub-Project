@@ -1,0 +1,57 @@
+/* GameHub · Day 5: an image beside its text.
+   Write today's work in this file only. One step at a time; check the panel. */
+
+/* STEP 1 ▸ Make each .split section a row: display: flex, align-items: center,
+   and a gap of 32px or more between the two halves. */
+
+.split {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* STEP 2 ▸ Give .split-media and .split-text flex: 1 so the two halves share
+   the row equally (50/50). */
+
+.split-media, .split-text {
+  flex: 1
+}
+
+/* STEP 3 ▸ Give .split-reverse flex-direction: row-reverse, so the second
+   section puts its picture on the other side. */
+
+.split-reverse {
+  flex-direction: row-reverse
+}
+
+/* STEP 4 ▸ In .split-media img, set width: 100%, a height of 240px or more,
+   and object-fit: cover, so the picture fills its box without squashing. */
+
+.split-media img {
+  width:100%;
+  height:320px;
+  object-fit: cover;
+}
+
+/* STEP 5 ▸ Zoom on hover: give .split-media overflow: hidden and a border-radius,
+   give the img a transition on transform, and on .split-media:hover img
+   use transform: scale(1.06). */
+
+.split-media {
+    overflow: hidden;
+    border-radius: 12px;
+}
+.split-media img {
+    transition: transform 0.4s;
+}
+.split-media:hover img {
+    transform: scale(1.06);
+}
+
+/* STEP 6 ▸ The Join us button cannot be seen on the light section: its border and
+   text are white. In .split .btn-secondary, set border-color and color to a dark
+   colour of your own (var(--primary) or var(--ink)). */
+.split .btn-secondary {
+  border-color: (var(--primary));
+  color: (var(--ink));
+}
