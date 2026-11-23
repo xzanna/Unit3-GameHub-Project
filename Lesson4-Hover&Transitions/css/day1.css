@@ -1,0 +1,74 @@
+/* GameHub · Day 1: setup, header and hero (given; do not change) */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2933;
+}
+img { max-width: 100%; display: block; }
+
+/* STEP 1: one rule lines the whole page up */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* STEP 2: flex, because the nav is one row */
+.site-header { background-color: #111827; }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* STEP 3: the ul is the links' parent, so it arranges them */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* STEP 4 */
+.logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* STEP 5: flex on the hero centers its content up and down */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+/* STEP 6 */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid transparent;  /* same height with or without an outline */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.btn-primary { background-color: #f59e0b; color: #111827; }
+.btn-secondary { border-color: #ffffff; color: #ffffff; }
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
