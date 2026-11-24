@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="csrf-token" content="SHZMd_1uoE86Sh4F9q6J6vMkMCAB6YJyIyUQwP8orKs"><script src="/_app/csrf.js?v=7460ac71cc"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameHub Day 6 targets</title>
+<style>
+  body { margin: 0; padding: 24px 16px; font: 16px/1.5 system-ui, "Segoe UI", Arial, sans-serif; color: #1f2933; }
+  main { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .lead, .t p { margin: 0 0 12px; color: #4a5565; }
+  .t { margin: 0 0 24px; }
+  .t h2 { font-size: 1.15rem; margin: 0; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .pair { grid-template-columns: 1fr; } }
+  figure { margin: 0; border: 1px solid #d5dbe3; border-radius: 6px; overflow: hidden; }
+  figcaption { font-size: .85rem; font-weight: 600; padding: 4px 10px; background: #eef2f7; }
+  .pic { background: #f5f7fa; padding: 14px; }
+  .gal { display: grid; gap: 10px; }
+  .c1 { grid-template-columns: 1fr; }
+  .c2 { grid-template-columns: repeat(2, 1fr); }
+  .c3 { grid-template-columns: repeat(3, 1fr); }
+  .tight { gap: 0; }
+  .big { grid-column: span 2; }
+  .tile { }
+  .card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,.12); }
+  .square { border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,.12); background: #fff; }
+  .shot { display: block; width: 100%; height: 62px; }
+  .tall { height: 90px; }
+  .cap { padding: 0; }
+  .cap.room { padding: 7px 9px; }
+  .cap h3 { margin: 8px 0 0; font-size: .85rem; color: #1e3a8a; }
+  .cap.room h3 { margin: 0; }
+  .cap p { margin: 1px 0 0; font-size: .72rem; color: #4a5565; }
+  .cap p.pale { color: #cbd3de; }
+</style>
+</head>
+<body>
+<main>
+<h1>GameHub Day 6 targets: the game gallery</h1>
+<p class="lead">Each step before and after. Your pictures and colours can differ; the panel turns a row green when the rule is right.</p>
+
+<section class="t"><h2>Step 1: Make it a grid</h2><p>display: grid and a gap on .gallery. Panel row 1.</p>
+<div class="pair">
+<figure><figcaption>Before: one stack, touching</figcaption><div class="pic"><div class="gal c1 tight">
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="870" cy="300" r="180" fill="#5b3fa8"/><ellipse cx="870" cy="300" rx="290" ry="52" fill="none" stroke="#f59e0b" stroke-width="18"/></svg><div class="cap"><h3>Nebula Drift</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+</div></div></figure>
+<figure><figcaption>After: one column, spaced</figcaption><div class="pic"><div class="gal c1">
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="870" cy="300" r="180" fill="#5b3fa8"/><ellipse cx="870" cy="300" rx="290" ry="52" fill="none" stroke="#f59e0b" stroke-width="18"/></svg><div class="cap"><h3>Nebula Drift</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+</div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 2: Columns that fit</h2><p>repeat(auto-fit, minmax(240px, 1fr)). The grid counts the columns, not you. Panel row 2.</p>
+<div class="pair">
+<figure><figcaption>Before: one column</figcaption><div class="pic"><div class="gal c1">
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="870" cy="300" r="180" fill="#5b3fa8"/><ellipse cx="870" cy="300" rx="290" ry="52" fill="none" stroke="#f59e0b" stroke-width="18"/></svg><div class="cap"><h3>Nebula Drift</h3></div></div>
+</div></div></figure>
+<figure><figcaption>After: as many as fit</figcaption><div class="pic"><div class="gal c3">
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="870" cy="300" r="180" fill="#5b3fa8"/><ellipse cx="870" cy="300" rx="290" ry="52" fill="none" stroke="#f59e0b" stroke-width="18"/></svg><div class="cap"><h3>Nebula</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 3: The featured game</h2><p>grid-column: span 2 on .tile-featured, the first tile only. Panel row 3.</p>
+<div class="pair">
+<figure><figcaption>Before: all the same width</figcaption><div class="pic"><div class="gal c3">
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="870" cy="300" r="180" fill="#5b3fa8"/><ellipse cx="870" cy="300" rx="290" ry="52" fill="none" stroke="#f59e0b" stroke-width="18"/></svg><div class="cap"><h3>Nebula</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+<figure><figcaption>After: one tile takes two</figcaption><div class="pic"><div class="gal c3">
+<div class="tile big"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="870" cy="300" r="180" fill="#5b3fa8"/><ellipse cx="870" cy="300" rx="290" ry="52" fill="none" stroke="#f59e0b" stroke-width="18"/><path d="M250 520 L560 440 L620 500 L300 580 Z" fill="#e5e7eb"/></svg><div class="cap"><h3>Nebula Drift</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 4: One shape for every picture</h2><p>width 100%, a height, object-fit: cover. Panel row 4.</p>
+<div class="pair">
+<figure><figcaption>Before: squashed, uneven</figcaption><div class="pic"><div class="gal c2">
+<div class="tile"><svg class="shot tall" viewBox="0 0 1200 800" preserveAspectRatio="none"><rect width="1200" height="800" fill="#1b1245"/><circle cx="600" cy="400" r="260" fill="#5b3fa8"/><ellipse cx="600" cy="400" rx="400" ry="60" fill="none" stroke="#f59e0b" stroke-width="22"/></svg><div class="cap"><h3>Nebula Drift</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="none"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+<figure><figcaption>After: one shape, cropped</figcaption><div class="pic"><div class="gal c2">
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b1245"/><circle cx="600" cy="400" r="260" fill="#5b3fa8"/><ellipse cx="600" cy="400" rx="400" ry="60" fill="none" stroke="#f59e0b" stroke-width="22"/></svg><div class="cap"><h3>Nebula Drift</h3></div></div>
+<div class="tile"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 5: Make each tile a card</h2><p>A background, a border-radius, overflow: hidden and a shadow. Panel row 5.</p>
+<div class="pair">
+<figure><figcaption>Before: corners poke out</figcaption><div class="pic"><div class="gal c2">
+<div class="tile square"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+<div class="tile square"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+<figure><figcaption>After: a card, corners cut</figcaption><div class="pic"><div class="gal c2">
+<div class="tile card"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3></div></div>
+<div class="tile card"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#1b5e6e"/><circle cx="600" cy="400" r="300" fill="#2d8a9c"/><circle cx="600" cy="400" r="180" fill="#8fdce6"/></svg><div class="cap"><h3>Tidepool</h3></div></div>
+</div></div></figure>
+</div></section>
+
+<section class="t"><h2>Step 6: The caption</h2><p>Padding inside the card, margin 0 on the heading, both lines readable (contrast 4.5+). Panel row 6.</p>
+<div class="pair">
+<figure><figcaption>Before: touching, and too pale</figcaption><div class="pic"><div class="gal c2">
+<div class="tile card"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap"><h3>Pixel Keep</h3><p class="pale">Strategy &middot; 1-4 players</p></div></div>
+</div></div></figure>
+<figure><figcaption>After: room, and easy to read</figcaption><div class="pic"><div class="gal c2">
+<div class="tile card"><svg class="shot" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="800" fill="#7cc4e8"/><path d="M0 620 Q600 520 1200 560 L1200 800 L0 800 Z" fill="#3f8f5a"/><rect x="420" y="330" width="360" height="270" fill="#9aa5b5"/></svg><div class="cap room"><h3>Pixel Keep</h3><p>Strategy &middot; 1-4 players</p></div></div>
+</div></div></figure>
+</div></section>
+</main>
+</body>
+</html>

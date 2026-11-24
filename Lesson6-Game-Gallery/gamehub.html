@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="csrf-token" content="SHZMd_1uoE86Sh4F9q6J6vMkMCAB6YJyIyUQwP8orKs"><script src="/_app/csrf.js?v=7460ac71cc"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GameHub</title>
+  <link rel="stylesheet" href="css/day1.css">
+  <link rel="stylesheet" href="css/day2.css">
+  <link rel="stylesheet" href="css/day3.css">
+  <link rel="stylesheet" href="css/day4.css">
+  <link rel="stylesheet" href="css/day5.css">
+  <link rel="stylesheet" href="css/day6.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="logo" href="#">GameHub</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Play together</h1>
+        <p class="tagline">One hub for every game night.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#games">Get started</a>
+          <a class="btn btn-secondary" href="#about">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container">
+      <h2>Features</h2>
+      <div class="cards">
+        <article class="card"><h3>Find teammates</h3><p>Match with players who keep your hours.</p></article>
+        <article class="card"><h3>Track progress</h3><p>Every match, every season, in one place.</p></article>
+        <article class="card"><h3>Live chat</h3><p>Talk while you play, with no extra app.</p></article>
+      </div>
+    </section>
+
+    <!-- Day 5: an image beside its text -->
+    <section id="about" class="container split">
+      <div class="split-media">
+        <img src="img/squad.svg" alt="Four players at one table, controllers in hand">
+      </div>
+      <div class="split-text">
+        <h2>About</h2>
+        <p>GameHub started as one group chat and a shared calendar. Today it is where our squads meet, plan a night and keep score.</p>
+      </div>
+    </section>
+
+    <!-- Day 5: the same section, the other way round -->
+    <section id="community" class="container split split-reverse">
+      <div class="split-media">
+        <img src="img/arena.svg" alt="An arena stage lit in blue, with a big screen above it">
+      </div>
+      <div class="split-text">
+        <h2>Community</h2>
+        <p>Weekly tournaments, open lobbies and a help channel that answers. Bring a friend; bring a team.</p>
+        <a class="btn btn-secondary" href="#contact">Join us</a>
+      </div>
+    </section>
+
+    <section id="games" class="container">
+      <h2>Games</h2>
+      <p>Pick a game and jump in.</p>
+
+      <!-- Day 6: the game gallery. The first tile is the featured one. -->
+      <div class="gallery">
+        <article class="tile tile-featured">
+          <img src="img/nebula-drift.svg" alt="A racing ship streaking past a ringed planet">
+          <div class="tile-caption">
+            <h3>Nebula Drift</h3>
+            <p class="tile-genre">Racing &middot; 2-8 players</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="img/pixel-keep.svg" alt="A blocky stone castle on a green hill">
+          <div class="tile-caption">
+            <h3>Pixel Keep</h3>
+            <p class="tile-genre">Strategy &middot; 1-4 players</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="img/ember-trail.svg" alt="A campfire between pine trees under a night sky">
+          <div class="tile-caption">
+            <h3>Ember Trail</h3>
+            <p class="tile-genre">Adventure &middot; 1-2 players</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="img/last-lobby.svg" alt="Supply crates and a target marker in a bright loading bay">
+          <div class="tile-caption">
+            <h3>Last Lobby</h3>
+            <p class="tile-genre">Shooter &middot; 4-16 players</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="img/tidepool.svg" alt="Round rock pools of clear water with bubbles">
+          <div class="tile-caption">
+            <h3>Tidepool</h3>
+            <p class="tile-genre">Puzzle &middot; 1 player</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="img/sky-harbor.svg" alt="Towers under construction with a crane above them">
+          <div class="tile-caption">
+            <h3>Sky Harbor</h3>
+            <p class="tile-genre">Building &middot; 1-6 players</p>
+          </div>
+        </article>
+        <article class="tile">
+          <img src="img/night-circuit.svg" alt="A lit race track curving through the dark, with two cars">
+          <div class="tile-caption">
+            <h3>Night Circuit</h3>
+            <p class="tile-genre">Racing &middot; 2-12 players</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="container"><p>Contact us anytime.</p></footer>
+  <script src="check.js"></script>
+</body>
+</html>

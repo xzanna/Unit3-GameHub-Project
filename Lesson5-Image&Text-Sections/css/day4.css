@@ -33,7 +33,6 @@
 
 .btn:hover {
    transform: translateY(-2px);
-   transform: rotateX(20deg)
 }
 
 /* STEP 5 · Card lift
@@ -46,7 +45,6 @@
 .card:hover{
    transform: translateY(-6px);
    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-   transform: rotateZ(540deg)
 }
 
 /* STEP 6 · Nav links

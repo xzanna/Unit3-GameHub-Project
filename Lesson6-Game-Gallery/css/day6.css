@@ -1,0 +1,76 @@
+/* GameHub · Day 6: the game gallery.
+
+   SET UP FIRST — before you write any CSS:
+   1. Duplicate your day 5 folder.
+   2. Rename the copy  day6
+   3. Upload today's new files into it:
+        gamehub.html   (now has a games gallery)
+        css/day6.css   (this file — you write here)
+        img/           (seven game pictures)
+        check.js       (the panel)
+        targets.html   (what each step should look like)
+      Your day1.css to day5.css came across in the copy. They are your own
+      work from the last five days: keep them, do not replace them.
+   4. Open gamehub.html with Live Server. You should see seven games
+      stacked down the page. If the page has no colours at all, the css
+      folder is not sitting next to gamehub.html. If you see words where
+      the pictures should be, the img folder did not upload.
+
+   Then write today's work in this file only.
+   One step at a time; check the panel. */
+
+/* STEP 1 ▸ Make .gallery a grid: display: grid, and a gap of 16px or more
+   between the tiles. */
+
+.gallery {
+    display: grid;
+    gap: 16px;
+   }
+
+/* STEP 2 ▸ Give .gallery grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   so the gallery makes as many columns as fit, each 240px or wider. */
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   }
+
+/* STEP 3 ▸ Give .tile-featured grid-column: span 2, so the first game takes
+   two columns instead of one. */
+
+.tile-featured {
+    grid-column: span 2;
+   }
+
+/* STEP 4 ▸ In .tile img, set width: 100%, a height of 140px or more, and
+   object-fit: cover (day 5 again), so every picture is the same shape. */
+
+.tile img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+   }
+
+/* STEP 5 ▸ Make each .tile a card: a background-color, a border-radius of 8px
+   or more, overflow: hidden so the picture's corners are cut too, and a box-shadow. */
+
+.tile {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+/* STEP 6 ▸ The caption: give .tile-caption padding of 8px or more. Then colour
+   .tile-caption h3 and .tile-genre so both are easy to read on your tile
+   (contrast 4.5 or more, as on day 2). Set the h3's margin to 0. */
+
+.tile-caption {
+    padding: 8px;
+   }
+.tile-caption h3 {
+    color: var(--ink);
+    margin: 0;
+   }
+.tile-genre {
+    color: var(--primary);
+   }
